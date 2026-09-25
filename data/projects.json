@@ -27,6 +27,187 @@
     "images/images2.jpg",
     "images/images3.jpg"
   ]
-}
+},
+  {
+    "title": "🛒 E-Commerce Sales Analytics Dashboard",
+    "tag": "Data Analytics
+    "summary": "Developed an interactive E-Commerce Sales Analytics Dashboard",
+    "description": "🛒 E-Commerce Sales Analytics Dashboard
+Project Overview
 
+Developed an interactive E-Commerce Sales Analytics Dashboard to analyze sales performance, profitability, customer segments, products, payment methods, and geographic sales across multiple regions and countries from January 2023 to December 2025.
+
+The dashboard helps identify top-performing products, high-revenue regions, customer segment contribution, monthly sales trends, and payment-method usage.
+
+🛠️ Tools & Technologies
+Power BI
+Power Query – Data cleaning and transformation
+DAX – Measures and KPIs
+Data Visualization
+Data Analysis
+Interactive Filters / Slicers
+📊 Key KPIs
+
+The dashboard tracks:
+
+KPI	Value
+Total Sales	484.56K
+Total Profit	158.87K
+Average Order Value	242.28
+Total Quantity	7K
+Total Orders	2K
+
+These KPIs dynamically change based on the selected filters.
+
+📄 Dashboard Pages
+1. Overview
+
+The Overview page provides a high-level view of business performance.
+
+Visualizations
+Total Sales
+Total Profit
+Average Order Value
+Total Quantity
+Total Orders
+Monthly Sales & Profit Trend
+Customer Segment Split
+Sales by Region
+Category filter
+Customer segment filter
+Payment method filter
+Region filter
+Customer Segments
+
+The dashboard analyzes:
+
+Consumer
+Corporate
+Home Office
+Product Categories
+Clothing & Accessories
+Furniture
+Office Supplies
+Technology
+Payment Methods
+Bank Transfer
+Cash on Delivery
+Credit Card
+PayPal
+Regions
+Asia Pacific
+Europe
+Middle East & Africa
+North America
+South America
+🌍 2. Geography
+
+The Geography page focuses on the geographical distribution of sales.
+
+Key Visualizations
+
+Top Countries by Sales
+
+Mexico
+United States
+Canada
+Japan
+Brazil
+
+Sales by Region
+
+North America
+Asia Pacific
+Europe
+South America
+Middle East & Africa
+
+Payment Method Usage
+
+The dashboard also provides interactive filtering by:
+
+Payment Method
+Region
+Example filtered result
+
+For one selected payment/region combination, the dashboard shows:
+
+Sales: 192.72K
+Profit: 62.32K
+Average Order Value: 241.80
+Quantity: 3K
+Orders: 797
+📦 3. Products
+
+The Products page analyzes product-level performance.
+
+Top 10 Products by Sales
+
+The dashboard identifies products such as:
+
+Standing Desk Converter
+Ergonomic Office Chair
+Corner L-Shaped Desk
+Mesh Back Task Chair
+Wireless Bluetooth Headphones
+Mechanical Gaming Keyboard
+Filing Cabinet 3-Drawer
+Folding Table Portable
+Portable External SSD
+Bookshelf 5-Tier
+Category Sales
+
+The dashboard compares:
+
+Clothing & Accessories — 69.38K
+Furniture — 256.27K
+Office Supplies — 19.39K
+
+This allows product/category performance to be analyzed quickly.
+
+📈 Important Business Insights
+
+From the dashboard:
+
+1. Furniture is a major sales contributor
+
+Furniture generates approximately 256.27K in the displayed category analysis, making it a substantial contributor to overall sales.
+
+2. Standing Desk Converter leads individual products
+
+The Standing Desk Converter appears as the highest-selling product in the Top 10 visualization.
+
+3. Regional performance varies
+
+The dashboard shows differences in sales contribution between Europe, North America, Asia Pacific, South America, and Middle East & Africa.
+
+4. Consumer segment contributes the largest share
+
+The Customer Segment Split visualization shows Consumer contributing more sales than Corporate and Home Office.
+
+5. Sales fluctuate throughout the year
+
+The monthly trend shows noticeable changes in both sales and profit, allowing management to identify stronger and weaker periods.
+
+6. Payment behavior can be analyzed
+
+Payment Method Usage provides a comparison of how customers use Bank Transfer, Cash on Delivery, Credit Card, and PayPal.
+
+🎯 Project Objectives
+
+You can describe the objectives as:
+
+Analyze overall e-commerce sales and profitability.
+Track important business KPIs.
+Identify top-performing products and categories.
+Compare sales performance across regions and countries.
+Understand customer segment contribution.
+Analyze payment-method usage.
+Monitor monthly sales and profit trends.
+Provide interactive filtering for business users.
+Create a dashboard that supports data-driven business decisions.",
+    "images": [
+      "images/images1.jpg"
+    ]
+  }
 ]
