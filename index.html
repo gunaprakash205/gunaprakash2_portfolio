@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guna Prakash Pokala — Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="mark"></span>Guna Prakash Pokala</a>
+    <nav class="menu">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow">// final-year btech, data &amp; software</p>
+    <h1>Projects, explained — not just committed.</h1>
+    <p class="lede">A running collection of what I've built, with the reasoning, the screenshots, and the results behind each one — built for recruiters skimming on a coffee break, not for people who already know the codebase.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">View projects</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-diagram" aria-hidden="true">
+    <svg viewBox="0 0 300 300">
+      <defs>
+        <pattern id="hero-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+          <path d="M 30 0 L 0 0 0 30" fill="none" stroke="var(--line)" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="300" height="300" fill="url(#hero-grid)"/>
+      <polyline points="20,220 80,150 140,190 200,90 280,60" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+      <circle cx="20" cy="220" r="4" fill="var(--accent)"/>
+      <circle cx="80" cy="150" r="4" fill="var(--accent)"/>
+      <circle cx="140" cy="190" r="4" fill="var(--accent)"/>
+      <circle cx="200" cy="90" r="4" fill="var(--accent)"/>
+      <circle cx="280" cy="60" r="4" fill="var(--accent)"/>
+      <rect x="0" y="0" width="300" height="300" fill="none" stroke="var(--teal)" stroke-width="1.5"/>
+    </svg>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <span class="count" id="work-count">0 projects</span>
+  </div>
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty" style="display:none;">
+    <h3>Nothing posted yet</h3>
+    <p>Projects will show up here as soon as they're added to <code>data/projects.json</code> — each one with a thumbnail, a write-up, and a few screenshots people can click through.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head"><h2>About</h2></div>
+  <div class="about-grid">
+    <div>
+      <p>I'm a final-year BTech student building toward a career in software and data analytics — this page is where the projects behind that live, with the context a resume line can't hold: what the problem was, what I tried, and what shipped.</p>
+      <p>Currently prepping for placement exams and interviews while shipping small tools and analysis projects on the side.</p>
+    </div>
+    <ul class="stat-list">
+      <li><span>Status</span><span>Open to opportunities</span></li>
+      <li><span>Focus</span><span>Data science / Data Analytics</span></li>
+      <li><span>Stage</span><span>Final-year BTech</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact-box">
+    <div>
+      <h2>Let's talk</h2>
+      <p>Open to internships, entry-level roles, and anything data- or software-shaped. Reach out through whichever works for you.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:gunaprakash205@gmail.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
+        gunaprakash205@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/gunaprakash-pokala/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        https://www.linkedin.com/in/gunaprakash-pokala/
+      </a>
+      <a href="https://github.com/gunaprakash205/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0018 4.77 5.07 5.07 0 0017.91.5S16.73.15 14 2a13.38 13.38 0 00-8 0C3.27.15 2.09.5 2.09.5A5.07 5.07 0 002 4.77a5.44 5.44 0 00-1.5 3.75c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 006 18.13V22"/></svg>
+        https://github.com/gunaprakash205/
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>Guna Prakash Pokala — updated as new projects ship.</footer>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="slider" id="slider">
+      <div class="slider-track" id="sliderTrack"></div>
+      <button class="slider-nav prev" id="prevBtn" aria-label="Previous image">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="slider-nav next" id="nextBtn" aria-label="Next image">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+    <div class="modal-body">
+      <p class="modal-tag" id="modalTag"></p>
+      <h2 id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "heart problems prediction afnakenfkndlfknsdklfnklsnfklefruhgnvirw rgwrjnvkwln(delete me)",
+    "tag": "Data Science",
+    "summary": "predict yes if it has a problem.",
+    "description": "The full write-up shown when someone clicks the project. Explain the problem, what you built, the tools/tech used, and the result. Line breaks in this text are kept, so you can write it as a few short paragraphs.",
+    "images": [
+      "images/images1.jpg"
+    ]
+  },
+  {
+  "title": "Weather Forecast App",
+  "tag": "Python",
+  "summary": "A CLI tool that pulls live weather data and predicts rain in your area.",
+  "description": "Built to practice API integration and data cleaning. Pulls from OpenWeather's API, caches results locally, and outputs a 5-day forecast with a simple accuracy score against historical data.\n\nStack: Python, requests, pandas.",
+  "images": [
+    "images/images2.jpg",
+    "images/images3.jpg"
+  ]
+},
+ {
+  "title": "Weather Forecast App",
+  "tag": "Python",
+  "summary": "A CLI tool that pulls live weather data and predicts rain in your area.",
+  "description": "Built to practice API integration and data cleaning. Pulls from OpenWeather's API, caches results locally, and outputs a 5-day forecast with a simple accuracy score against historical data.\n\nStack: Python, requests, pandas.",
+  "images": [
+    "images/images2.jpg",
+    "images/images3.jpg"
+  ]
+}
+
+]
