@@ -180,8 +180,8 @@
       "Kept preprocessing steps organized to avoid unnecessarily repeating the same transformations.",
       "This project entry describes the implementation workflow; add your exact task, dataset, and evaluation results when ready."
     ],
-    "demo": "",
-    "git": "",
+    "demo": "https://dog-cat-image-clasification-2mavp7zkuzsczhmajel3ej.streamlit.app/",
+    "git": "https://github.com/gunaprakash205/new_Plant-Disease-Detection",
     "li": "",
     "gallery": [
       "./images/images1.jpg",
