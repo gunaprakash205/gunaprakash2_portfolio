@@ -1,0 +1,33 @@
+{
+  "title": "My Project Title",
+  "tag": "Machine Learning",
+  "icon": "🧠",
+  "image": "./images/my-project/overview.png",
+  "summary": "One-sentence summary of the project.",
+  "metrics": [
+    [
+      "Metric",
+      "Replace with real result"
+    ]
+  ],
+  "stack": [
+    "Python",
+    "Pandas",
+    "Scikit-learn"
+  ],
+  "points": [
+    "Describe what you built.",
+    "Describe how you evaluated it."
+  ],
+  "demo": "",
+  "git": "",
+  "li": "",
+  "gallery": [
+    "./images/my-project/overview.png",
+    "./images/my-project/results.png"
+  ],
+  "galleryCaptions": [
+    "Project overview",
+    "Results"
+  ]
+}

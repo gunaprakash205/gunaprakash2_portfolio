@@ -1,0 +1,8 @@
+{
+  "title": "Certificate title",
+  "issuer": "Issuing organization",
+  "date": "Month YYYY",
+  "image": "./images/certificates/my-certificate.jpg",
+  "description": "What you learned or completed.",
+  "credentialUrl": "https://example.com/verify-certificate"
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Customer Churn Prediction & Retention Analytics",
+    "tag": "Classification",
+    "icon": "📉",
+    "g1": "#2F6BFF",
+    "g2": "#06B6D4",
+    "image": "./images/customer-churn.svg",
+    "summary": "IBM Telco dataset (7,043 records) taken from raw data to a deployed real-time prediction app.",
+    "metrics": [
+      [
+        "Accuracy",
+        "80.55%"
+      ],
+      [
+        "Recall",
+        "55.88%"
+      ],
+      [
+        "F1",
+        "60.40%"
+      ],
+      [
+        "ROC-AUC",
+        "84.21%"
+      ]
+    ],
+    "stack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Streamlit",
+      "Pickle"
+    ],
+    "points": [
+      "Took the IBM Telco Customer Churn dataset (7,043 records) from raw data to a deployed app: cleaning, preprocessing, training and evaluation.",
+      "Only 1,869 customers had churned versus 5,174 who stayed, so I compared four algorithms plus class-weighted versions. Logistic Regression came out best.",
+      "Lowered the classification threshold to 25% to catch more churners, and used model coefficients to find the main drivers: tenure, contract type and internet service.",
+      "Saved the pipeline with Pickle and built a Streamlit app for real-time predictions."
+    ],
+    "demo": "",
+    "git": "",
+    "li": "",
+    "gallery": [
+      "./images/customer-churn.svg",
+      "./images/customer-churn-data.svg",
+      "./images/customer-churn-model.svg",
+      "./images/customer-churn-insights.svg"
+    ],
+    "galleryCaptions": [
+      "Project overview",
+      "Dataset and churn distribution",
+      "Model workflow",
+      "Main churn drivers"
+    ]
+  },
+  {
+    "title": "Heart Disease Risk Prediction (Explainable AI)",
+    "tag": "Explainable AI",
+    "icon": "❤️",
+    "g1": "#10B981",
+    "g2": "#0E9F8E",
+    "image": "./images/heart-disease.svg",
+    "summary": "Six algorithms compared; SHAP explains each patient's prediction in a Streamlit app.",
+    "metrics": [
+      [
+        "Accuracy",
+        "86.96%"
+      ],
+      [
+        "Precision",
+        "84.82%"
+      ],
+      [
+        "Recall",
+        "93.14%"
+      ],
+      [
+        "F1",
+        "88.79%"
+      ]
+    ],
+    "stack": [
+      "Python",
+      "Scikit-learn",
+      "Random Forest",
+      "SHAP",
+      "Streamlit"
+    ],
+    "points": [
+      "Compared six algorithms: Random Forest, Logistic Regression, Decision Tree, Gradient Boosting, SVM and KNN. Random Forest performed best.",
+      "On the held-out test set it reached 86.96% accuracy, 84.82% precision, 93.14% recall and 88.79% F1. Five-fold cross-validation averaged 81.39% accuracy.",
+      "Used SHAP to show how each feature affected an individual patient's prediction, and built a Streamlit app so non-technical users can read the results easily."
+    ],
+    "demo": "",
+    "git": "",
+    "li": "",
+    "gallery": [
+      "./images/heart-disease.svg",
+      "./images/heart-disease-data.svg",
+      "./images/heart-disease-model.svg",
+      "./images/heart-disease-shap.svg"
+    ],
+    "galleryCaptions": [
+      "Project overview",
+      "Feature analysis",
+      "Model evaluation",
+      "Explainable prediction"
+    ]
+  },
+  {
+    "title": "California Housing Price Prediction",
+    "tag": "Regression",
+    "icon": "🏠",
+    "g1": "#F59E0B",
+    "g2": "#EF4444",
+    "image": "./images/housing.svg",
+    "summary": "Regression pipeline on California census data with live price predictions.",
+    "metrics": [
+      [
+        "R²",
+        "0.818"
+      ],
+      [
+        "MAE",
+        "0.273"
+      ],
+      [
+        "RMSE",
+        "0.423"
+      ]
+    ],
+    "stack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Streamlit",
+      "Pickle"
+    ],
+    "points": [
+      "Built a regression pipeline on California census data and compared Decision Tree, Gradient Boosting and Random Forest regressors. Tuned the Random Forest (n_estimators=200, min_samples_leaf=2).",
+      "Test results: R² 0.818, MAE 0.273, RMSE 0.423. Median income and location were the strongest predictors.",
+      "Saved the model with Pickle and deployed a Streamlit app for live price predictions."
+    ],
+    "demo": "",
+    "git": "",
+    "li": "",
+    "gallery": [
+      "./images/housing.svg",
+      "./images/housing-data.svg",
+      "./images/housing-model.svg",
+      "./images/housing-prediction.svg"
+    ],
+    "galleryCaptions": [
+      "Project overview",
+      "Dataset overview",
+      "Regression metrics",
+      "Prediction workflow"
+    ]
+  },
+  {
+    "title": "NLP Text Processing & TF-IDF",
+    "tag": "Natural Language Processing",
+    "icon": "✦",
+    "g1": "#8B5CF6",
+    "g2": "#C4B5FD",
+    "image": "./images/nlp-tfidf.svg",
+    "summary": "A text-processing workflow exploring cleaning, stop-word removal and TF-IDF feature extraction.",
+    "metrics": [],
+    "stack": [
+      "Python",
+      "NLTK",
+      "Scikit-learn",
+      "TF-IDF",
+      "NLP"
+    ],
+    "points": [
+      "Prepared text for analysis with lowercase conversion, punctuation cleanup, tokenization and stop-word removal where appropriate.",
+      "Converted cleaned text into numerical features using Scikit-learn's TF-IDF vectorizer.",
+      "Kept preprocessing steps organized to avoid unnecessarily repeating the same transformations.",
+      "This project entry describes the implementation workflow; add your exact task, dataset, and evaluation results when ready."
+    ],
+    "demo": "",
+    "git": "",
+    "li": "",
+    "gallery": [
+      "./images/images1.jpg",
+      "./images/images1.jpg",
+      "./images/images1.jpg"
+    ],
+    "galleryCaptions": [
+      "TF-IDF text workflow",
+      "Text preprocessing",
+      "Numerical text features"
+    ]
+  },
+
+
+{
+  "id": "nlp-text-analysis",
+  "title": "NLP Text Analysis by Guna Prakash using TF-IDF",
+  "category": "Natural Language Processing",
+  "description": "An NLP project that preprocesses text data, removes stop words, and converts text into hddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddnumerical features using TF-IDF.",
+  "overview": "This project demonstrates a text-processing pipeline using Python and NLP techniques to prepare text for machine learning.",
+  "gallery": [
+      "./images/images2.jpg",
+      "./images/images1.jpg",
+      "./images/images1.jpg"
+    ],
+  "technologies": [
+    "Python",
+    "NLTK",
+    "Scikit-learn",
+    "Pandas",
+    "TF-IDF"
+  ],
+  "highlights": [
+    "Text cleaning and normalization",
+    "Stop-word removal",
+    "Tokenization",
+    "TF-IDF feature extraction",
+    "Conversion of text into numerical vectors"
+  ],
+  "github": "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY",
+  "demo": ""
+}
+]
