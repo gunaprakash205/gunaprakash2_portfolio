@@ -33,12 +33,18 @@
   "gallery": [
     "./images/movie_reco1.png",
     "./images/movie_reco2.png",
-    "./images/movie_reco3.png"
+    "./images/movie_reco3.png",
+    "./images/movie_reco4.png",
+    "./images/movie_reco5.png",
+    "./images/movie_reco6.png"
   ],
   "galleryCaptions": [
     "Select a movie to get started",
     "Explore five similar movie recommendations",
-    "Browse recommendations with movie posters"
+    "Browse recommendations with movie posters",
+    "Discover more recommended movies",
+    "Explore another recommendation result",
+    "Movie recommendation interface"
   ]
 }
 ]
