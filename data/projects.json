@@ -31,7 +31,7 @@
   "gallery": [
     "./images/movie_reco1.png",
     "./images/movie_reco2.png",
-    "./images/movie_reco3.png",
+    "./images/movie_reco3.png"
   ],
   "galleryCaptions": [
     "Movie selection and discovery",
