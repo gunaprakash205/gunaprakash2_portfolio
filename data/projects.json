@@ -1,38 +1,41 @@
 
 {
-  "title": "NLP Text Analysis Using TF-IDF",
-  "tag": "Natural Language Processing",
+  "title": "Movie Recommendation System",
+  "tag": "Recommendation System",
   "icon": "✦",
   "g1": "#8B5CF6",
   "g2": "#C4B5FD",
-  "image": "./images/nlp-tfidf.svg",
-  "summary": "A text processing pipeline that transforms raw text into meaningful numerical features using NLP techniques and TF-IDF.",
+  "image": "./images/movie-recommendation.svg",
+  "summary": "A movie discovery app that recommends films similar to the one you choose using cosine similarity.",
   "metrics": [],
   "stack": [
     "Python",
     "Pandas",
-    "NLTK",
     "Scikit-learn",
-    "TF-IDF"
+    "TF-IDF",
+    "Cosine Similarity",
+    "Streamlit",
+    "TMDB API"
   ],
   "points": [
-    "Built a text preprocessing workflow to prepare raw text for analysis and machine learning.",
-    "Applied lowercase conversion, punctuation cleaning, tokenization and stop word removal where appropriate.",
-    "Used TF-IDF vectorization to transform cleaned text into numerical features based on word importance.",
-    "Organized preprocessing steps into a consistent workflow to avoid repeating unnecessary transformations.",
-    "Explored how numerical text representations can support NLP tasks such as text classification and similarity analysis."
+    "Built a movie recommendation system that helps users discover films based on their selected movie.",
+    "Processed movie metadata, including genres, keywords, cast and crew, to identify similarities between films.",
+    "Used TF-IDF vectorization and cosine similarity to convert movie information into numerical features and measure how closely movies are related.",
+    "Generated personalized recommendations by ranking movies according to their similarity scores.",
+    "Integrated movie posters using the TMDB API to create a more engaging and interactive user experience.",
+    "Deployed the application with Streamlit so users can explore movie recommendations online."
   ],
-  "demo": "",
-  "git": "",
+  "demo": "https://new-movie-recommendation.streamlit.app/",
+  "git": "https://github.com/gunaprakash205/movie_recommendation",
   "li": "",
   "gallery": [
-    "./images/images2.jpg",
-    "./images/images1.jpg",
-    "./images/images1.jpg"
+    "./images/movie_reco1.png",
+    "./images/movie_reco2.png",
+    "./images/movie_reco3.png",
   ],
   "galleryCaptions": [
-    "Text preprocessing workflow",
-    "Text cleaning and tokenization",
-    "TF-IDF feature extraction"
+    "Movie selection and discovery",
+    "Personalized movie recommendations",
+    "Similar movies with posters"
   ]
 }
