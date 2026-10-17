@@ -158,42 +158,48 @@
       "Prediction workflow"
     ]
   },
-  {
-    "title": "NLP Text Processing & TF-IDF",
-    "tag": "Natural Language Processing",
-    "icon": "✦",
-    "g1": "#8B5CF6",
-    "g2": "#C4B5FD",
-    "image": "./images/nlp-tfidf.svg",
-    "summary": "A text-processing workflow exploring cleaning, stop-word removal and TF-IDF feature extraction.",
-    "metrics": [],
-    "stack": [
-      "Python",
-      "NLTK",
-      "Scikit-learn",
-      "TF-IDF",
-      "NLP"
-    ],
-    "points": [
-      "Prepared text for analysis with lowercase conversion, punctuation cleanup, tokenization and stop-word removal where appropriate.",
-      "Converted cleaned text into numerical features using Scikit-learn's TF-IDF vectorizer.",
-      "Kept preprocessing steps organized to avoid unnecessarily repeating the same transformations.",
-      "This project entry describes the implementation workflow; add your exact task, dataset, and evaluation results when ready."
-    ],
-    "demo": "https://dog-cat-image-clasification-2mavp7zkuzsczhmajel3ej.streamlit.app/",
-    "git": "https://github.com/gunaprakash205/new_Plant-Disease-Detection",
-    "li": "",
-    "gallery": [
-      "./images/images1.jpg",
-      "./images/images1.jpg",
-      "./images/images1.jpg"
-    ],
-    "galleryCaptions": [
-      "TF-IDF text workflow",
-      "Text preprocessing",
-      "Numerical text features"
-    ]
-  },
+ 
+{
+  "title": "Movie Recommendation System",
+  "tag": "Recommendation System",
+  "icon": "✦",
+  "g1": "#8B5CF6",
+  "g2": "#C4B5FD",
+  "image": "./images/movie-recommendation.svg",
+  "summary": "A movie discovery app that recommends films similar to the one you choose using cosine similarity.",
+  "metrics": [],
+  "stack": [
+    "Python",
+    "Pandas",
+    "Scikit-learn",
+    "TF-IDF",
+    "Cosine Similarity",
+    "Streamlit",
+    "TMDB API"
+  ],
+  "points": [
+    "Built a movie recommendation system that helps users discover films based on their selected movie.",
+    "Processed movie metadata, including genres, keywords, cast and crew, to identify similarities between films.",
+    "Used TF-IDF vectorization and cosine similarity to convert movie information into numerical features and measure how closely movies are related.",
+    "Generated personalized recommendations by ranking movies according to their similarity scores.",
+    "Integrated movie posters using the TMDB API to create a more engaging and interactive user experience.",
+    "Deployed the application with Streamlit so users can explore movie recommendations online."
+  ],
+  "demo": "https://new-movie-recommendation.streamlit.app/",
+  "git": "https://github.com/gunaprakash205/movie_recommendation",
+  "li": "",
+  "gallery": [
+    "./images/movie-recommendation-1.png",
+    "./images/movie-recommendation-2.png",
+    "./images/movie-recommendation-3.png"
+  ],
+  "galleryCaptions": [
+    "Movie selection and discovery",
+    "Personalized movie recommendations",
+    "Similar movies with posters"
+  ]
+}
+
 
 
 {
