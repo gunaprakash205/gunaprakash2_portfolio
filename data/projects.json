@@ -6,7 +6,7 @@
   "g1": "#8B5CF6",
   "g2": "#C4B5FD",
   "image": "./images/movie-recommendation.svg",
-  "summary": "A movie discovery app that recommends films similar to the one you choose using cosine similarity.",
+  "summary": "A movie discovery app that helps users find their next favourite film by recommending movies similar to their selection.",
   "metrics": [],
   "stack": [
     "Python",
@@ -18,12 +18,12 @@
     "TMDB API"
   ],
   "points": [
-    "Built a movie recommendation system that helps users discover films based on their selected movie.",
-    "Processed movie metadata, including genres, keywords, cast and crew, to identify similarities between films.",
-    "Used TF-IDF vectorization and cosine similarity to convert movie information into numerical features and measure how closely movies are related.",
-    "Generated personalized recommendations by ranking movies according to their similarity scores.",
-    "Integrated movie posters using the TMDB API to create a more engaging and interactive user experience.",
-    "Deployed the application with Streamlit so users can explore movie recommendations online."
+    "Built a content based movie recommendation system that helps users discover films based on their interests.",
+    "Processed movie details such as genres, keywords, cast and crew to represent each film through its content.",
+    "Used TF-IDF to convert movie metadata into numerical vectors and cosine similarity to measure how closely movies are related.",
+    "Ranked movies by similarity and returned the five closest recommendations for the selected film.",
+    "Integrated the TMDB API to display movie posters and make recommendations more visual and engaging.",
+    "Deployed the application using Streamlit, allowing users to select a movie and explore similar films online."
   ],
   "demo": "https://new-movie-recommendation.streamlit.app/",
   "git": "https://github.com/gunaprakash205/movie_recommendation",
