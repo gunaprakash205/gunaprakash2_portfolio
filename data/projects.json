@@ -189,9 +189,12 @@
   "git": "https://github.com/gunaprakash205/movie_recommendation",
   "li": "",
   "gallery": [
-    "./images/movie-recommendation-1.png",
-    "./images/movie-recommendation-2.png",
-    "./images/movie-recommendation-3.png"
+    "./images/movie_reco1.png",
+    "./images/movie_reco2.png",
+    "./images/movie_reco3.png",
+    "./images/movie_reco4.png",
+    "./images/movie_reco5.png",
+    "./images/movie_reco6.png",
   ],
   "galleryCaptions": [
     "Movie selection and discovery",
@@ -199,7 +202,7 @@
     "Similar movies with posters"
   ]
 }
-
+,
 
 
 {
