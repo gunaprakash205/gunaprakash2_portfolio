@@ -47,14 +47,15 @@
     "Movie recommendation interface"
   ]
 },
+
   {
     "title": "SMS Spam Detection",
-    "tag": "NLP & Machine Learning",
+    "tag": "NLP and Machine Learning",
     "icon": "✉",
     "g1": "#8B5CF6",
     "g2": "#C4B5FD",
     "image": "./images/spam1.png",
-    "summary": "An NLP-based machine learning project that classifies SMS messages as Spam or Ham using text preprocessing, TF-IDF feature extraction, and a Linear Support Vector Machine (SVM) classifier.",
+    "summary": "A machine learning project that detects spam messages using natural language processing, TF-IDF and a Linear SVM model. The application helps users identify unwanted messages through a simple web interface.",
     "metrics": [
       "Accuracy: 98.39%",
       "Precision: 99.25%",
@@ -64,25 +65,24 @@
     "stack": [
       "Python",
       "Pandas",
-      "NumPy",
       "Scikit-learn",
-      "Natural Language Processing",
+      "NLP",
       "TF-IDF",
       "Linear SVM",
       "Streamlit",
       "Pickle"
     ],
     "points": [
-      "Problem statement. Spam messages often contain fraudulent offers, unwanted promotions, and suspicious links. Manually identifying them is time-consuming. The objective is to build a machine learning system that automatically classifies SMS messages as Spam or Ham (legitimate). This is a binary classification problem represented as y ∈ {0, 1}, where 0 = Ham and 1 = Spam.",
-      "Dataset collection and preparation. Loaded a labeled SMS dataset using Pandas, containing message text and its corresponding category. Selected the relevant columns and checked the class distribution. Example code: df = pd.read_csv('spam.csv', encoding='latin-1'); df = df.iloc[:, :2]; df.columns = ['label', 'message']. Result: a structured dataset ready for NLP preprocessing and model training.",
-      "Text preprocessing. Prepared the text by converting messages to lowercase and removing unwanted characters and URLs according to the cleaning strategy. Example: 'WIN a FREE prize!!!' becomes 'win a free prize'. A general representation is x_clean = T_clean(x), where x is the original message. Result: more consistent text for feature extraction.",
-      "Train-test splitting. Divided the dataset into training and testing sets, using 80% for training and 20% for evaluation. Applied stratified splitting to preserve the proportions of Spam and Ham messages. Example code: X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y). Result: the model learns from training messages and is evaluated on unseen test messages.",
-      "TF-IDF feature extraction. Converted text messages into numerical vectors using Scikit-learn's TfidfVectorizer. Term Frequency measures how often a word appears in a message, while Inverse Document Frequency reduces the relative importance of words appearing across many documents. Formula: TF-IDF(t,d) = TF(t,d) × IDF(t), where IDF(t) = log((1 + N)/(1 + df(t))) + 1. Example code: tfidf = TfidfVectorizer(max_features=5000, ngram_range=(1, 2), stop_words='english'); X_train_tfidf = tfidf.fit_transform(X_train); X_test_tfidf = tfidf.transform(X_test). Result: messages become numerical feature vectors that capture informative words and phrases.",
-      "Model training using Linear SVM. Trained a Linear Support Vector Machine to distinguish spam messages from legitimate messages using TF-IDF features. Decision function: f(x) = wᵀx + b, where x is the feature vector, w is the learned weight vector, and b is the bias. The predicted class depends on the sign of f(x). Example code: model = LinearSVC(C=1.0, random_state=42); model.fit(X_train_tfidf, y_train). Result: the model learns a decision boundary for classifying Spam and Ham messages.",
-      "Model evaluation. Evaluated predictions against the actual test labels using accuracy, precision, recall, F1-score, and a confusion matrix. Accuracy = (TP + TN)/(TP + TN + FP + FN). Precision = TP/(TP + FP). Recall = TP/(TP + FN). F1-score = 2 × Precision × Recall/(Precision + Recall). Here, TP and TN represent correct spam and ham classifications, while FP and FN represent classification errors. Example code: y_pred = model.predict(X_test_tfidf); print(classification_report(y_test, y_pred)); print(confusion_matrix(y_test, y_pred)). Result: these metrics show overall correctness, how reliably spam is identified, and how many spam messages are missed.",
-      "Model pipeline and serialization. Combined TF-IDF vectorization and the Linear SVM classifier into a reusable Scikit-learn Pipeline. The workflow is SMS → TF-IDF → Linear SVM → Spam/Ham. Saved the fitted pipeline using Pickle so that the application can load it without retraining. Result: the vectorizer and classifier can be reused together during deployment.",
-      "Streamlit deployment and prediction. Integrated the saved model pipeline into a Streamlit web application. Users enter an SMS message, and the application predicts its category using the same fitted TF-IDF transformation and classifier. Example code: prediction = pipeline.predict([message])[0]; result = 'Spam' if prediction == 1 else 'Ham'. Result: an interactive application that provides immediate Spam or Ham predictions for user-entered messages.",
-      "Results and conclusion. The previously reported evaluation results were 98.39% accuracy, 99.25% precision, 88.59% recall, and 93.62% F1-score. High precision indicates that few messages predicted as spam were actually legitimate, while the lower recall indicates that some spam messages were missed. The project demonstrates an end-to-end NLP workflow covering text preprocessing, numerical feature extraction, supervised machine learning, evaluation, and deployment."
+      "Problem statement. Spam messages often contain fake offers, unwanted advertisements and suspicious links. The goal of this project is to build a machine learning model that can automatically identify whether a message is spam or a normal message called ham.",
+      "Dataset preparation. Used a labeled SMS dataset containing messages and their categories. Loaded the data using Pandas and selected the required columns for training. This gave the model examples of both spam and legitimate messages to learn from.",
+      "Text preprocessing. Cleaned the messages by converting text to lowercase and removing unwanted characters and links. For example, WIN a FREE prize becomes win a free prize. This helps keep the text consistent before converting it into numerical features.",
+      "Train and test split. Divided the dataset into training and testing sets using an 80 to 20 ratio. The training data helps the model learn patterns, while the testing data checks how well it predicts messages it has not seen before.",
+      "TF-IDF feature extraction. Used TF-IDF to convert text messages into numerical values that a machine learning model can understand. It gives more importance to useful words and less importance to words that appear frequently across messages. This helps the model identify patterns commonly associated with spam.",
+      "Model training. Used a Linear Support Vector Machine, also called Linear SVM, to classify messages as spam or ham. The model learns from the TF-IDF features and finds patterns that help separate the two categories.",
+      "Model evaluation. Evaluated the model using accuracy, precision, recall and F1-score. Accuracy measures overall correctness, precision checks how reliable spam predictions are, and recall measures how many actual spam messages are detected. The confusion matrix helps identify incorrect predictions.",
+      "Model saving. Saved the trained TF-IDF and Linear SVM pipeline using Pickle. This allows the application to reuse the trained model without repeating the entire training process.",
+      "Streamlit application. Built a simple web interface using Streamlit where users can enter a message and check its category. The saved model processes the message and displays whether it is spam or ham.",
+      "Results and conclusion. The model achieved 98.39% accuracy on the evaluation dataset, with 99.25% precision, 88.59% recall and a 93.62% F1-score. The project demonstrates how NLP and machine learning can be used to detect spam messages and make predictions through a web application."
     ],
     "demo": "https://spamdetection-system.streamlit.app/",
     "git": "YOUR_GITHUB_REPOSITORY_URL",
@@ -97,14 +97,13 @@
       "./images/spam7.png"
     ],
     "galleryCaptions": [
-      "SMS Spam Detection project overview",
-      "SMS dataset and preprocessing",
-      "Text preprocessing and NLP workflow",
+      "SMS spam detection overview",
+      "Dataset preparation",
+      "Text preprocessing",
       "TF-IDF feature extraction",
-      "Machine learning model training",
-      "Model evaluation and performance",
-      "Streamlit spam detection application"
+      "Model training",
+      "Model evaluation",
+      "Spam detection application"
     ]
   }
-
 ]
