@@ -85,7 +85,7 @@
       "Results and conclusion. The model achieved 98.39% accuracy on the evaluation dataset, with 99.25% precision, 88.59% recall and a 93.62% F1-score. The project demonstrates how NLP and machine learning can be used to detect spam messages and make predictions through a web application."
     ],
     "demo": "https://spamdetection-system.streamlit.app/",
-    "git": "YOUR_GITHUB_REPOSITORY_URL",
+    "git": "https://github.com/gunaprakash205/spam_detection",
     "li": "",
     "gallery": [
       "./images/spam1.png",
