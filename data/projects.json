@@ -162,14 +162,15 @@
     "git": "https://github.com/gunaprakash205/Customer-Churn-Prediction-Retention-Analytics",
     "li": "",
     "gallery": [
+      "./images/churn5.png",
       "./images/churn1.png",
       "./images/churn2.png",
       "./images/churn3.png",
-      "./images/churn4.png",
-      "./images/churn5.png"
+      "./images/churn4.png"
+      
     ],
     "galleryCaptions": [
-      "Bank customer churn prediction overview",
+      "Bank customer churn prediction project overview",
       "Dataset exploration and preparation",
       "Exploratory data analysis",
       "Model evaluation and feature importance",
